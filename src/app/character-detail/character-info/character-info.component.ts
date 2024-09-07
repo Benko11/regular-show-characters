@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Character, CharacterService } from '../../character.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import {} from '@angular/platform-browser';
 
 @Component({
   selector: ' character-info',
