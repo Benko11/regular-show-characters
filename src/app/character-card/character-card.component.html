@@ -1,0 +1,12 @@
+<a [routerLink]="'/character-detail/' + id">
+  <div class="card">
+    <div
+      class="hero"
+      [style.background-image]="'url(/assets/images/' + url + ')'"
+    ></div>
+    <div class="card-body">
+      <h2>{{ name }}</h2>
+      <div class="description"><ng-content></ng-content></div>
+    </div>
+  </div>
+</a>

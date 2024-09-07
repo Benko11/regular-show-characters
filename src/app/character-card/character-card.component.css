@@ -1,0 +1,39 @@
+a {
+  color: unset;
+  text-decoration: unset;
+}
+
+.card {
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.25s all;
+  background-color: var(--background-2);
+}
+
+a:hover .card,
+a:focus .card {
+  transform: translateY(-4px);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 1rem 1.5rem;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  overflow: hidden;
+  text-overflow: clip;
+}

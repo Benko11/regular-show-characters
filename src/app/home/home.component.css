@@ -1,0 +1,13 @@
+.items {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 2rem;
+  justify-content: center;
+  max-width: 1400px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}

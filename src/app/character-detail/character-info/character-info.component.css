@@ -1,0 +1,25 @@
+.block {
+  width: 800px;
+  max-width: 95%;
+  background-color: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 20px;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+img {
+  float: right;
+  width: 200px;
+  margin: 0 0 1rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.clear {
+  clear: both;
+}

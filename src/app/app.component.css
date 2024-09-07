@@ -1,0 +1,90 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(/assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Product Sans";
+  src: url(/assets/fonts/ProductSans-Regular.ttf);
+}
+
+:root {
+  --background: rgb(230, 230, 241);
+  --body: rgba(0, 0, 0, 0.95);
+  --background-2: #fff;
+}
+
+* {
+  cursor: none !important;
+}
+
+body {
+  font-family: "Product Sans", Poppins, sans-serif;
+  color: var(--body);
+  background-color: var(--background);
+  user-select: none !important;
+}
+
+nav a {
+  color: var(--body);
+  text-decoration: unset;
+}
+
+nav {
+  background-color: var(--background);
+}
+
+nav h1 {
+  display: inline-block;
+  padding: 1rem 2rem;
+  transition: all 0.25s ease;
+}
+
+nav a:hover h1,
+nav a:focus h1 {
+  scale: 0.95;
+}

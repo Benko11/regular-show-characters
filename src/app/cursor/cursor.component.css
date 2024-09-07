@@ -1,0 +1,17 @@
+#cursor {
+  --size: 2.25;
+  width: calc(var(--size) * 1rem);
+  height: calc(var(--size) * 1rem);
+  background-color: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: background-color 0.5s ease;
+}
+
+#cursor.hover {
+  --size: 1.75;
+  background-color: rgba(0, 0, 0, 0.85);
+}

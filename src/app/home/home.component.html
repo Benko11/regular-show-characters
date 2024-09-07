@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="items">
+    @for (character of getCharacters(); track character.name) {
+    <character-card
+      [id]="character.id"
+      [name]="character.name"
+      [url]="character.url"
+      >{{ character.description }}</character-card
+    >
+    }
+  </div>
+</div>
