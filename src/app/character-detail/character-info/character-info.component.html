@@ -1,9 +1,11 @@
 <div class="block">
-  <h1>{{ getCharacterInfo().name }}</h1>
+  <h2>{{ getCharacterInfo().name }}</h2>
   <img
     [src]="'/assets/images/' + getCharacterInfo().url"
     [alt]="getCharacterInfo().name"
   />
-  <p>{{ getCharacterInfo().description }}</p>
+  @for (paragraph of getCharacterInfo().description; track $index) {
+  <p>{{ paragraph }}</p>
+  }
   <div class="clear"></div>
 </div>

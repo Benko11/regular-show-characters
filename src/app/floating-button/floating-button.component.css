@@ -1,0 +1,29 @@
+.floating {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(200, 40%, 25%);
+  border-radius: 50%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+}
+
+.floating:hover,
+.floating:focus {
+  background-color: hsl(200, 40%, 20%);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .floating {
+    right: 1rem;
+    bottom: 1rem;
+  }
+}
