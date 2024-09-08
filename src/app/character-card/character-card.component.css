@@ -23,13 +23,6 @@ a:focus .card {
   background-size: cover;
   border-radius: 20px 20px 0 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  filter: blur(2px);
-  transition: all 0.25s ease;
-}
-
-a:hover .hero,
-a:focus .hero {
-  filter: blur(0);
 }
 
 .card-body {
